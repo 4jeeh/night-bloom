@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Night Bloom — An interactive bioluminescent botanical experience crafted in Midnight Obsidian and Cyan starlight."
+    />
+    <meta name="theme-color" content="#0B0F19" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/flowers.png" type="image/png" />
+    <title>Night Bloom — A Special Flower For You</title>
+  </head>
+  <body class="landing-body">
+    <!-- Ambient Midnight Obsidian & Bioluminescent Cyan Backdrop -->
+    <div class="ambient-sky" aria-hidden="true">
+      <div class="ambient-orb ambient-orb--1"></div>
+      <div class="ambient-orb ambient-orb--2"></div>
+      <div class="ambient-stars"></div>
+    </div>
+
+    <main class="hero-stage">
+      <section class="glass-sanctuary" aria-labelledby="greeting-title">
+        <div class="sanctuary-crest">
+          <span class="crest-dot" aria-hidden="true"></span>
+          <span class="crest-text">Nocturnal Botanical Sanctuary</span>
+          <span class="crest-dot" aria-hidden="true"></span>
+        </div>
+
+        <h1
+          id="greeting-title"
+          class="greetings"
+          aria-label="A Special Flower For You"
+        >
+          A Special Flower For You
+        </h1>
+
+        <p id="greeting-subtitle" class="description">
+          <span>
+            Beneath the quiet canopy of midnight obsidian, a bioluminescent
+            bloom awakens—crafted of starlight, serenity, and timeless grace,
+            unfolding gently in your honor.
+          </span>
+        </p>
+
+        <div class="button">
+          <a
+            id="bloom-cta"
+            class="bloom-btn"
+            style="--clr: #38bdf8"
+            href="flower.html"
+          >
+            <span>Awaken the Bloom</span>
+            <i></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Subtle Interactive URL Personalizer -->
+      <aside class="personalize-bar" aria-label="Personalize greeting">
+        <button
+          type="button"
+          id="toggle-personalize"
+          class="personalize-trigger"
+          aria-expanded="false"
+          aria-controls="personalize-panel"
+        >
+          <span class="trigger-sparkle" aria-hidden="true">✦</span>
+          <span>Personalize &amp; Share</span>
+        </button>
+
+        <form
+          id="personalize-panel"
+          class="personalize-panel"
+          hidden
+          autocomplete="off"
+        >
+          <label for="recipient-input" class="sr-only">Recipient Name</label>
+          <input
+            id="recipient-input"
+            name="name"
+            type="text"
+            maxlength="40"
+            placeholder="Enter a name (e.g., Aurora)..."
+            class="personalize-input"
+          />
+          <button type="submit" class="personalize-action">Preview</button>
+          <button
+            type="button"
+            id="copy-link-btn"
+            class="personalize-action personalize-action--secondary"
+          >
+            Copy Link
+          </button>
+        </form>
+      </aside>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

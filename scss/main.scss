@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap");
+
+$bg-obsidian: #0b0f19;
+$cyan-primary: #38bdf8;
+$text-starlight: #f8fafc;
+$text-mist: #cbd5e1;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+}
+
+body {
+  color: $text-starlight;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-obsidian;
+}
+
+.greetings {
+  font-family: "Cinzel", "Playfair Display", Georgia, serif;
+  font-size: clamp(2rem, 5.2vw, 3.85rem);
+  font-weight: 600;
+  text-wrap: balance;
+  word-break: keep-all;
+
+  .char,
+  > span {
+    animation: glow 3.2s ease-in-out infinite;
+    animation-delay: calc(var(--char-index, 0) * 0.08s);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    color: $text-starlight;
+    text-shadow: 0 0 12px rgba($cyan-primary, 0.85),
+      0 0 32px rgba($cyan-primary, 0.55), 0 0 70px rgba($cyan-primary, 0.35);
+  }
+  35%,
+  65% {
+    color: $text-mist;
+    text-shadow: 0 0 6px rgba($cyan-primary, 0.18);
+  }
+}
+
+.description {
+  font-size: clamp(0.98rem, 1.8vw, 1.15rem);
+  color: $text-mist;
+  margin-bottom: 2rem;
+}
+
+.button a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: $text-starlight;
+}
