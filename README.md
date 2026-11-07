@@ -60,19 +60,19 @@ You can personalize **Night Bloom** for anyone simply by appending query paramet
 
 - **Universal Default (No Parameters):**
   ```text
-  https://4jeeh.github.io/night-bloom/
+  https://<your-username>.github.io/night-bloom/
   ```
   *Displays: "A Special Flower For You"*
 
 - **Personalized Recipient Name:**
   ```text
-  https://4jeeh.github.io/night-bloom/?name=Aurora
+  https://<your-username>.github.io/night-bloom/?name=Aurora
   ```
   *Displays: "A Special Flower For Aurora"*
 
 - **Personalized Name + Custom Message:**
   ```text
-  https://4jeeh.github.io/night-bloom/?name=Aurora%20Celeste&msg=Wishing%20you%20starlight%20and%20serenity%20tonight.
+  https://<your-username>.github.io/night-bloom/?name=Aurora%20Celeste&msg=Wishing%20you%20starlight%20and%20serenity%20tonight.
   ```
 
 ---
